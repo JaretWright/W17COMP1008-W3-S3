@@ -45,7 +45,13 @@ public class HourlyEmployee extends Employee {
      * validate it to be in the range 1-16 and add it to the hours worked.
      * @return 
      */
-    
+    public void recordHoursWorked(double newHours)
+    {
+        if (newHours >= 1 && newHours <= 16)
+            hoursWorked += newHours;
+        else
+            throw new IllegalArgumentException("Hours worked must be in the range 1-16");
+    }
     
     
     @Override
