@@ -8,7 +8,7 @@ import java.time.Period;
  *
  * @author jwright
  */
-public class Employee {
+public abstract class Employee {
     private String firstName, lastName;
     private int socialInsuranceNumber;
     private LocalDate birthdate;
@@ -59,5 +59,7 @@ public class Employee {
     {
         return firstName + " " + lastName;
     }
+    
+    public abstract PayCheque getPayCheck();
     
 }
