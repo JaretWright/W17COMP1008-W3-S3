@@ -41,6 +41,5 @@ public class BasePlusCommissionEmployee extends CommissionEmployee
         double payAmount = monthlyBaseSalary + super.getCommissions();
         PayCheque newPay = new PayCheque(super.toString(),"base + commission", payAmount);
         return newPay;
-    
     }
 }

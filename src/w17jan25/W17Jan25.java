@@ -35,7 +35,13 @@ public class W17Jan25 {
         System.out.printf("%s The employee class is %s%n",  emp1.getPayCheck(),emp1.getClass());
         System.out.printf("%s The employee class is %s%n",  emp2.getPayCheck(),emp2.getClass());
        
+       BasePlusCommissionEmployee emp3 = new BasePlusCommissionEmployee("Anita","Job",12345,
+                                                LocalDate.of(1972, Month.MAY, 10), 5, 2000);
        
+        emp3.recordSales(3234.33);
+        emp3.recordSales(983.33);
+        
+        System.out.printf("%s The employee class is %s%n",  emp3.getPayCheck(),emp3.getClass());
     }
     
 }
